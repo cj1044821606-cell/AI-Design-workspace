@@ -1,0 +1,140 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'MarkOT';
+  src: url('../品牌素材库/字体/MarkOT-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MarkOT';
+  src: url('../品牌素材库/字体/MarkOT-LightItalic.otf') format('opentype');
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'MarkOT';
+  src: url('../品牌素材库/字体/MarkOT.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MarkOT';
+  src: url('../品牌素材库/字体/MarkOT-Italic.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'MarkOT';
+  src: url('../品牌素材库/字体/MarkOT-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MarkOT';
+  src: url('../品牌素材库/字体/MarkOT-MediumItalic.otf') format('opentype');
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'MarkOT';
+  src: url('../品牌素材库/字体/MarkOT-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MarkOT';
+  src: url('../品牌素材库/字体/MarkOT-BoldItalic.otf') format('opentype');
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'MarkOT';
+  src: url('../品牌素材库/字体/MarkOT-Heavy.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MarkOT';
+  src: url('../品牌素材库/字体/MarkOT-HeavyItalic.otf') format('opentype');
+  font-weight: 800;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'MarkOT';
+  src: url('../品牌素材库/字体/MarkOT-Black.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MarkOT';
+  src: url('../品牌素材库/字体/MarkOT-BlackItalic.otf') format('opentype');
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face { font-family: 'MiSans'; src: url('../品牌素材库/字体/MISANS-THIN.TTF') format('truetype'); font-weight: 100; }
+@font-face { font-family: 'MiSans'; src: url('../品牌素材库/字体/MISANS-EXTRALIGHT.TTF') format('truetype'); font-weight: 200; }
+@font-face { font-family: 'MiSans'; src: url('../品牌素材库/字体/MISANS-LIGHT.TTF') format('truetype'); font-weight: 300; }
+@font-face { font-family: 'MiSans'; src: url('../品牌素材库/字体/MISANS-NORMAL.TTF') format('truetype'); font-weight: 400; }
+@font-face { font-family: 'MiSans'; src: url('../品牌素材库/字体/MISANS-REGULAR.TTF') format('truetype'); font-weight: 400; }
+@font-face { font-family: 'MiSans'; src: url('../品牌素材库/字体/MISANS-MEDIUM.TTF') format('truetype'); font-weight: 500; }
+@font-face { font-family: 'MiSans'; src: url('../品牌素材库/字体/MISANS-DEMIBOLD.TTF') format('truetype'); font-weight: 600; }
+@font-face { font-family: 'MiSans'; src: url('../品牌素材库/字体/MISANS-SEMIBOLD.TTF') format('truetype'); font-weight: 600; }
+@font-face { font-family: 'MiSans'; src: url('../品牌素材库/字体/MISANS-BOLD.TTF') format('truetype'); font-weight: 700; }
+@font-face { font-family: 'MiSans'; src: url('../品牌素材库/字体/MISANS-HEAVY.TTF') format('truetype'); font-weight: 800; }
+
+@theme {
+  --font-sans: 'MarkOT', 'MiSans', ui-sans-serif, system-ui, sans-serif;
+  --font-misans: 'MiSans', ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Print Styles for PDF Export */
+@media print {
+  @page {
+    size: A4;
+    margin: 0;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    background: white !important;
+  }
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+  .design-group-label {
+    display: none !important;
+  }
+  .design-group-wrapper {
+    outline: none !important;
+  }
+}
+
+/* Design Group Labels (Workspace UI) */
+.design-group-label {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(59, 130, 246, 0.6);
+  color: white;
+  font-size: 10px;
+  line-height: 1;
+  padding: 4px 6px;
+  border-bottom-right-radius: 4px;
+  z-index: 9999;
+  pointer-events: none;
+  white-space: nowrap;
+  backdrop-filter: blur(2px);
+}
+
+.show-design-labels .design-group-label {
+  display: block;
+}
+
+.show-design-labels .design-group-wrapper {
+  outline: 1px dashed rgba(59, 130, 246, 0.4);
+  outline-offset: -1px;
+}

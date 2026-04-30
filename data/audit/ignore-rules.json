@@ -1,0 +1,14 @@
+[
+  {
+    "signature": "parameter_name_mismatch:authentication-level->certifications:table-field",
+    "createdAt": "2026-04-14T08:54:38.655Z",
+    "sourceIssueId": "uz06-authentication-level",
+    "sourceAuditId": "audit_20260414_uz_en_round1_cn_fixed"
+  },
+  {
+    "signature": "terminology_inconsistent:support-smart-load-and-main-load->supports-smart-load-and-main-load-outputs:feature-copy",
+    "createdAt": "2026-04-14T08:24:06.255Z",
+    "sourceIssueId": "uz06-smart-load-wording",
+    "sourceAuditId": "audit_20260414_uz_en_round1_cn_fixed"
+  }
+]

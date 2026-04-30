@@ -1,0 +1,14 @@
+node_modules/
+build/
+dist/
+coverage/
+output/
+.playwright-cli/
+.claude/
+.vscode/
+.DS_Store
+*.log
+tmp_*
+untitled.tsx
+.env*
+!.env.example

@@ -1,0 +1,514 @@
+{
+  "latestAuditId": "audit_20260414_uz_en_round1_cn_fixed",
+  "sessions": [
+    {
+      "schema": "catalog_audit_report_v1",
+      "auditId": "audit_20260414_uz_en_round1_cn_fixed",
+      "materialType": "catalog",
+      "projectType": "CatalogProjectUZ",
+      "range": {
+        "scope": "project",
+        "description": "乌兹英语版第一轮产品页审校导入（中文说明版）",
+        "editions": [
+          "uz-en"
+        ]
+      },
+      "issues": [
+        {
+          "issueId": "uz06-authentication-level",
+          "issueType": "parameter_name_mismatch",
+          "severity": "medium",
+          "message": "参数名表述不规范",
+          "why": "该行内容实际承载的是 IEC/EN 认证与防护等级信息，使用 “Authentication Level” 不符合常见英文参数命名习惯，容易被误解为认证流程或权限等级。",
+          "location": {
+            "editionId": "uz-en",
+            "projectType": "CatalogProjectUZ",
+            "spreadId": "UZ06",
+            "componentName": "CatalogSpreadUZ06",
+            "sourceLayer": "legacy-spread",
+            "sourcePath": "src/components/CatalogSpreadUZ06.tsx",
+            "anchorLabel": "参数表格",
+            "textQuery": "Authentication Level",
+            "occurrenceIndex": 0,
+            "areaType": "table"
+          },
+          "currentValue": "Authentication Level",
+          "candidates": [
+            {
+              "candidateId": "fix_1",
+              "label": "改为 Certifications",
+              "value": "Certifications",
+              "explanation": "更符合该行展示认证标准与防护等级的实际含义。"
+            }
+          ],
+          "recommendedCandidateId": "fix_1",
+          "ignoreSignature": "parameter_name_mismatch:authentication-level->certifications:table-field",
+          "status": "ignored"
+        },
+        {
+          "issueId": "uz06-smart-load-wording",
+          "issueType": "terminology_inconsistent",
+          "severity": "low",
+          "message": "特性句式不够自然",
+          "why": "“Support Smart Load and Main Load” 语法上不是严格错误，但作为特性卖点文案较生硬，缺少动词三单和输出对象，和整本画册其他英文卖点风格也不够统一。",
+          "location": {
+            "editionId": "uz-en",
+            "projectType": "CatalogProjectUZ",
+            "spreadId": "UZ06",
+            "componentName": "CatalogSpreadUZ06",
+            "sourceLayer": "legacy-spread",
+            "sourcePath": "src/components/CatalogSpreadUZ06.tsx",
+            "anchorLabel": "产品特性列表",
+            "textQuery": "Support Smart Load and Main Load",
+            "occurrenceIndex": 0,
+            "areaType": "features"
+          },
+          "currentValue": "Support Smart Load and Main Load",
+          "candidates": [
+            {
+              "candidateId": "fix_1",
+              "label": "改为 Supports smart load and main load outputs",
+              "value": "Supports smart load and main load outputs",
+              "explanation": "语法更完整，也更像正式产品特性描述。"
+            }
+          ],
+          "recommendedCandidateId": "fix_1",
+          "ignoreSignature": "terminology_inconsistent:support-smart-load-and-main-load->supports-smart-load-and-main-load-outputs:feature-copy",
+          "status": "open"
+        },
+        {
+          "issueId": "uz06-user-defined-battery-type",
+          "issueType": "parameter_value_mismatch",
+          "severity": "medium",
+          "message": "参数值写法不完整",
+          "why": "“User Defined” 单独放在电池类型并列项中语义偏空，读者不容易理解这是用户自定义参数模式，而不是一种实际电池类型。",
+          "location": {
+            "editionId": "uz-en",
+            "projectType": "CatalogProjectUZ",
+            "spreadId": "UZ06",
+            "componentName": "CatalogSpreadUZ06",
+            "sourceLayer": "legacy-spread",
+            "sourcePath": "src/components/CatalogSpreadUZ06.tsx",
+            "anchorLabel": "参数表格",
+            "textQuery": "Lead-acid/Lithium-ion/User Defined",
+            "occurrenceIndex": 0,
+            "areaType": "table"
+          },
+          "currentValue": "Lead-acid/Lithium-ion/User Defined",
+          "candidates": [
+            {
+              "candidateId": "fix_1",
+              "label": "改为 Lead-acid/Lithium-ion/User-defined settings",
+              "value": "Lead-acid/Lithium-ion/User-defined settings",
+              "explanation": "明确第三项表示用户自定义设置，而不是一种电池化学类型。"
+            }
+          ],
+          "recommendedCandidateId": "fix_1",
+          "ignoreSignature": "parameter_value_mismatch:user-defined-battery-type->user-defined-settings:table-field",
+          "status": "applied",
+          "appliedCandidateId": "fix_1",
+          "appliedAt": "2026-04-14T08:53:29.601Z"
+        },
+        {
+          "issueId": "uz08-input-overvoltage-wording",
+          "issueType": "terminology_inconsistent",
+          "severity": "low",
+          "message": "文案用词不够标准",
+          "why": "“Input Overvoltage Protection till 380V” 中的 “till” 偏口语，在产品规格与卖点文案里通常写作 “up to”。",
+          "location": {
+            "editionId": "uz-en",
+            "projectType": "CatalogProjectUZ",
+            "spreadId": "UZ08",
+            "componentName": "CatalogSpreadUZ08",
+            "sourceLayer": "legacy-spread",
+            "sourcePath": "src/components/CatalogSpreadUZ08.tsx",
+            "anchorLabel": "产品特性列表",
+            "textQuery": "Input Overvoltage Protection till 380V",
+            "occurrenceIndex": 0,
+            "areaType": "features"
+          },
+          "currentValue": "Input Overvoltage Protection till 380V",
+          "candidates": [
+            {
+              "candidateId": "fix_1",
+              "label": "改为 Input overvoltage protection up to 380V",
+              "value": "Input overvoltage protection up to 380V",
+              "explanation": "更符合英文技术文案常用表达。"
+            }
+          ],
+          "recommendedCandidateId": "fix_1",
+          "ignoreSignature": "terminology_inconsistent:till->up-to:feature-copy",
+          "status": "applied",
+          "appliedCandidateId": "fix_1",
+          "appliedAt": "2026-04-14T08:43:36.501Z"
+        },
+        {
+          "issueId": "uz08-authentication-level",
+          "issueType": "parameter_name_mismatch",
+          "severity": "medium",
+          "message": "参数名表述不规范",
+          "why": "该行同样承载认证标准与防护等级内容，使用 “Authentication Level” 与行业表述不符，建议与同系列页面统一。",
+          "location": {
+            "editionId": "uz-en",
+            "projectType": "CatalogProjectUZ",
+            "spreadId": "UZ08",
+            "componentName": "CatalogSpreadUZ08",
+            "sourceLayer": "legacy-spread",
+            "sourcePath": "src/components/CatalogSpreadUZ08.tsx",
+            "anchorLabel": "参数表格",
+            "textQuery": "Authentication Level",
+            "occurrenceIndex": 0,
+            "areaType": "table"
+          },
+          "currentValue": "Authentication Level",
+          "candidates": [
+            {
+              "candidateId": "fix_1",
+              "label": "改为 Certifications",
+              "value": "Certifications",
+              "explanation": "与该参数行展示内容及其他建议页面保持一致。"
+            }
+          ],
+          "recommendedCandidateId": "fix_1",
+          "ignoreSignature": "parameter_name_mismatch:authentication-level->certifications:table-field",
+          "status": "open"
+        },
+        {
+          "issueId": "uz08-user-defined-battery-type",
+          "issueType": "parameter_value_mismatch",
+          "severity": "medium",
+          "message": "参数值写法不完整",
+          "why": "“User Defined” 在这里仍然容易被误读为一种电池类型，建议补全为用户自定义设置。",
+          "location": {
+            "editionId": "uz-en",
+            "projectType": "CatalogProjectUZ",
+            "spreadId": "UZ08",
+            "componentName": "CatalogSpreadUZ08",
+            "sourceLayer": "legacy-spread",
+            "sourcePath": "src/components/CatalogSpreadUZ08.tsx",
+            "anchorLabel": "参数表格",
+            "textQuery": "Lead-acid/Lithium-ion/User Defined",
+            "occurrenceIndex": 0,
+            "areaType": "table"
+          },
+          "currentValue": "Lead-acid/Lithium-ion/User Defined",
+          "candidates": [
+            {
+              "candidateId": "fix_1",
+              "label": "改为 Lead-acid/Lithium-ion/User-defined settings",
+              "value": "Lead-acid/Lithium-ion/User-defined settings",
+              "explanation": "表达更明确，也更适合作为规格表参数值。"
+            }
+          ],
+          "recommendedCandidateId": "fix_1",
+          "ignoreSignature": "parameter_value_mismatch:user-defined-battery-type->user-defined-settings:table-field",
+          "status": "applied",
+          "appliedCandidateId": "fix_1",
+          "appliedAt": "2026-04-14T08:30:01.402Z"
+        },
+        {
+          "issueId": "uz08-switch-time-warning",
+          "issueType": "table_structure_warning",
+          "severity": "low",
+          "message": "该参数项建议人工复核上下文完整性",
+          "why": "当前仅写为 “20 (Appliances)”，如果该机型本身不存在 UPS 切换时间则可以保留；但从系列页写法看，这一项可能缺少与 UPS 模式相关的配套说明，建议人工对照数据源确认。",
+          "location": {
+            "editionId": "uz-en",
+            "projectType": "CatalogProjectUZ",
+            "spreadId": "UZ08",
+            "componentName": "CatalogSpreadUZ08",
+            "sourceLayer": "legacy-spread",
+            "sourcePath": "src/components/CatalogSpreadUZ08.tsx",
+            "anchorLabel": "参数表格",
+            "textQuery": "20 (Appliances)",
+            "occurrenceIndex": 0,
+            "areaType": "table"
+          },
+          "currentValue": "20 (Appliances)",
+          "candidates": [
+            {
+              "candidateId": "fix_1",
+              "label": "保持不改，仅人工确认原始数据",
+              "value": "20 (Appliances)",
+              "explanation": "这是一条提醒型卡片，目的是提示设计师核对源数据，不建议自动改写。"
+            }
+          ],
+          "recommendedCandidateId": "fix_1",
+          "ignoreSignature": "table_structure_warning:switch-time-single-appliances:manual-review",
+          "status": "open"
+        }
+      ],
+      "importedAt": "2026-04-14T08:03:13.498Z"
+    },
+    {
+      "schema": "catalog_audit_report_v1",
+      "auditId": "audit_utf8_probe_cn",
+      "materialType": "catalog",
+      "projectType": "CatalogProjectUZ",
+      "range": {
+        "scope": "project",
+        "description": "中文链路探针"
+      },
+      "issues": [
+        {
+          "issueId": "probe-1",
+          "issueType": "spelling",
+          "severity": "low",
+          "message": "中文是否正常保存",
+          "why": "用于验证导入、存储、读取、前端展示整条链路是否保持 UTF-8。",
+          "location": {
+            "editionId": "uz-en",
+            "projectType": "CatalogProjectUZ",
+            "spreadId": "UZ06",
+            "componentName": "CatalogSpreadUZ06",
+            "sourceLayer": "legacy-spread",
+            "sourcePath": "src/components/CatalogSpreadUZ06.tsx",
+            "anchorLabel": "参数表格",
+            "textQuery": "Authentication Level",
+            "occurrenceIndex": 0,
+            "areaType": "table"
+          },
+          "currentValue": "Authentication Level",
+          "candidates": [
+            {
+              "candidateId": "fix_1",
+              "label": "改为 Certifications",
+              "value": "Certifications",
+              "explanation": "这是给设计师看的中文说明。"
+            }
+          ],
+          "recommendedCandidateId": "fix_1",
+          "ignoreSignature": "probe:utf8-cn",
+          "status": "open"
+        }
+      ],
+      "importedAt": "2026-04-14T08:00:20.971Z"
+    },
+    {
+      "schema": "catalog_audit_report_v1",
+      "auditId": "audit_20260414_uz_en_round1",
+      "materialType": "catalog",
+      "projectType": "CatalogProjectUZ",
+      "range": {
+        "scope": "project",
+        "description": "???????????????????????????????",
+        "editions": [
+          "uz-en"
+        ]
+      },
+      "issues": [
+        {
+          "issueId": "uz06-authentication-level",
+          "issueType": "parameter_name_mismatch",
+          "severity": "medium",
+          "message": "??????",
+          "why": "?????? IEC ?????????????/????????? ?Authentication Level??",
+          "location": {
+            "editionId": "uz-en",
+            "projectType": "CatalogProjectUZ",
+            "spreadId": "UZ06",
+            "componentName": "CatalogSpreadUZ06",
+            "sourceLayer": "legacy-spread",
+            "sourcePath": "src/components/CatalogSpreadUZ06.tsx",
+            "textQuery": "Authentication Level",
+            "occurrenceIndex": 0,
+            "areaType": "table"
+          },
+          "currentValue": "Authentication Level",
+          "candidates": [
+            {
+              "candidateId": "fix_1",
+              "label": "?????????",
+              "value": "Certifications",
+              "explanation": "????????????? IEC ?????"
+            }
+          ],
+          "recommendedCandidateId": "fix_1",
+          "ignoreSignature": "parameter_name_mismatch:authentication-level->certifications:table-field",
+          "status": "open"
+        },
+        {
+          "issueId": "uz06-smart-load-wording",
+          "issueType": "terminology_inconsistent",
+          "severity": "low",
+          "message": "??????????",
+          "why": "?Support Smart Load and Main Load? ?????????????????????????????",
+          "location": {
+            "editionId": "uz-en",
+            "projectType": "CatalogProjectUZ",
+            "spreadId": "UZ06",
+            "componentName": "CatalogSpreadUZ06",
+            "sourceLayer": "legacy-spread",
+            "sourcePath": "src/components/CatalogSpreadUZ06.tsx",
+            "textQuery": "Support Smart Load and Main Load",
+            "occurrenceIndex": 0,
+            "areaType": "features"
+          },
+          "currentValue": "Support Smart Load and Main Load",
+          "candidates": [
+            {
+              "candidateId": "fix_1",
+              "label": "??????????",
+              "value": "Supports smart load and main load outputs",
+              "explanation": "??????????????????"
+            }
+          ],
+          "recommendedCandidateId": "fix_1",
+          "ignoreSignature": "terminology_inconsistent:support-smart-load-and-main-load->supports-smart-load-and-main-load-outputs:feature-copy",
+          "status": "open"
+        },
+        {
+          "issueId": "uz06-user-defined-battery-type",
+          "issueType": "parameter_value_mismatch",
+          "severity": "medium",
+          "message": "????????",
+          "why": "?User Defined? ?????????????????????????????????????",
+          "location": {
+            "editionId": "uz-en",
+            "projectType": "CatalogProjectUZ",
+            "spreadId": "UZ06",
+            "componentName": "CatalogSpreadUZ06",
+            "sourceLayer": "legacy-spread",
+            "sourcePath": "src/components/CatalogSpreadUZ06.tsx",
+            "textQuery": "Lead-acid/Lithium-ion/User Defined",
+            "occurrenceIndex": 0,
+            "areaType": "table"
+          },
+          "currentValue": "Lead-acid/Lithium-ion/User Defined",
+          "candidates": [
+            {
+              "candidateId": "fix_1",
+              "label": "??????????",
+              "value": "Lead-acid/Lithium-ion/User-defined settings",
+              "explanation": "????? ?User Defined? ??????????"
+            }
+          ],
+          "recommendedCandidateId": "fix_1",
+          "ignoreSignature": "parameter_value_mismatch:user-defined-battery-type->user-defined-settings:table-field",
+          "status": "open"
+        },
+        {
+          "issueId": "uz08-authentication-level",
+          "issueType": "parameter_name_mismatch",
+          "severity": "medium",
+          "message": "??????",
+          "why": "?????? IEC ??????????????????????????",
+          "location": {
+            "editionId": "uz-en",
+            "projectType": "CatalogProjectUZ",
+            "spreadId": "UZ08",
+            "componentName": "CatalogSpreadUZ08",
+            "sourceLayer": "legacy-spread",
+            "sourcePath": "src/components/CatalogSpreadUZ08.tsx",
+            "textQuery": "Authentication Level",
+            "occurrenceIndex": 0,
+            "areaType": "table"
+          },
+          "currentValue": "Authentication Level",
+          "candidates": [
+            {
+              "candidateId": "fix_1",
+              "label": "?????????",
+              "value": "Certifications",
+              "explanation": "??? IEC ??????????"
+            }
+          ],
+          "recommendedCandidateId": "fix_1",
+          "ignoreSignature": "parameter_name_mismatch:authentication-level->certifications:table-field",
+          "status": "open"
+        },
+        {
+          "issueId": "uz08-input-overvoltage-till-380v",
+          "issueType": "format",
+          "severity": "low",
+          "message": "??????????",
+          "why": "?till 380V? ?????????????? ?up to 380V? ????",
+          "location": {
+            "editionId": "uz-en",
+            "projectType": "CatalogProjectUZ",
+            "spreadId": "UZ08",
+            "componentName": "CatalogSpreadUZ08",
+            "sourceLayer": "legacy-spread",
+            "sourcePath": "src/components/CatalogSpreadUZ08.tsx",
+            "textQuery": "Input Overvoltage Protection till 380V",
+            "occurrenceIndex": 0,
+            "areaType": "features"
+          },
+          "currentValue": "Input Overvoltage Protection till 380V",
+          "candidates": [
+            {
+              "candidateId": "fix_1",
+              "label": "??????????",
+              "value": "Input overvoltage protection up to 380V",
+              "explanation": "???????????????"
+            }
+          ],
+          "recommendedCandidateId": "fix_1",
+          "ignoreSignature": "format:till-380v->up-to-380v:feature-copy",
+          "status": "open"
+        },
+        {
+          "issueId": "uz08-user-defined-battery-type",
+          "issueType": "parameter_value_mismatch",
+          "severity": "medium",
+          "message": "????????",
+          "why": "?User Defined? ????????? Lead-acid / Lithium-ion ?????????",
+          "location": {
+            "editionId": "uz-en",
+            "projectType": "CatalogProjectUZ",
+            "spreadId": "UZ08",
+            "componentName": "CatalogSpreadUZ08",
+            "sourceLayer": "legacy-spread",
+            "sourcePath": "src/components/CatalogSpreadUZ08.tsx",
+            "textQuery": "Lead-acid/Lithium-ion/User Defined",
+            "occurrenceIndex": 0,
+            "areaType": "table"
+          },
+          "currentValue": "Lead-acid/Lithium-ion/User Defined",
+          "candidates": [
+            {
+              "candidateId": "fix_1",
+              "label": "??????????",
+              "value": "Lead-acid/Lithium-ion/User-defined settings",
+              "explanation": "??? ?User Defined? ??????????"
+            }
+          ],
+          "recommendedCandidateId": "fix_1",
+          "ignoreSignature": "parameter_value_mismatch:user-defined-battery-type->user-defined-settings:table-field",
+          "status": "open"
+        },
+        {
+          "issueId": "uz08-switch-time-appliances-only",
+          "issueType": "table_structure_warning",
+          "severity": "medium",
+          "message": "????????",
+          "why": "??????????????? UPS ? Appliances ?????????????? Appliances?????????????",
+          "location": {
+            "editionId": "uz-en",
+            "projectType": "CatalogProjectUZ",
+            "spreadId": "UZ08",
+            "componentName": "CatalogSpreadUZ08",
+            "sourceLayer": "legacy-spread",
+            "sourcePath": "src/components/CatalogSpreadUZ08.tsx",
+            "textQuery": "20 (Appliances)",
+            "occurrenceIndex": 0,
+            "areaType": "table"
+          },
+          "currentValue": "20 (Appliances)",
+          "candidates": [
+            {
+              "candidateId": "fix_1",
+              "label": "????????????",
+              "value": "20 (Appliances)",
+              "explanation": "?????????????????????????"
+            }
+          ],
+          "recommendedCandidateId": "fix_1",
+          "ignoreSignature": "table_structure_warning:switch-time-appliances-only:table-row",
+          "status": "open"
+        }
+      ],
+      "importedAt": "2026-04-14T06:46:23.363Z"
+    }
+  ]
+}
