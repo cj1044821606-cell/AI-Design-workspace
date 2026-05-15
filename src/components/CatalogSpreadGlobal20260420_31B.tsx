@@ -34,23 +34,23 @@ const rows: TableRow[] = [
   { kind: 'row', label: 'Max. Charge/Discharge Power (kW)', values: ['75/75', '100/100', '125/125'] },
 
   { kind: 'section', label: 'Grid Side (On-Grid)' },
-  { kind: 'row', label: 'Rated Output Power (kW)', values: ['75.0', '100.0', '125.0'] },
-  { kind: 'row', label: 'Max. Output Apparent Power (kVA)', values: ['75.0', '100.0', '125.0'] },
-  { kind: 'row', label: 'Rated AC Voltage', values: ['220/380V; 230/400V; 240/415V (3L/N/PE)'], compact: true },
+  { kind: 'row', label: 'Rated Output Power (kW)', values: ['75', '100', '125'] },
+  { kind: 'row', label: 'Max. Output Apparent Power (kVA)', values: ['75', '100', '125'] },
+  { kind: 'row', label: 'Rated AC Voltage (V)', values: ['220/380V; 230/400V; 240/415V (3L/N/PE)'], compact: true },
   { kind: 'row', label: 'Rated AC Frequency (Hz)', values: ['50/60'] },
   { kind: 'row', label: 'Rated Output Current (A)', values: ['113.9/108.3/104.3', '151.9/144.3/139.1', '189.9/180.4/173.9'], compact: true },
   { kind: 'row', label: 'Max. Output Current (A)', values: ['113.9', '151.9', '189.9'] },
   { kind: 'row', label: 'Power Factor', values: ['0.8 Leading to 0.8 Lagging'] },
   { kind: 'row', label: 'THDi (@Rated Power)', values: ['<3%'] },
-  { kind: 'row', label: 'Max. Input Apparent Power (kVA)**', values: ['150.0', '200.0', '207.0'] },
-  { kind: 'row', label: 'Rated AC Voltage', values: ['220/380V; 230/400V; 240/415V (3L/N/PE)'], compact: true },
+  { kind: 'row', label: 'Max. Input Apparent Power (kVA)**', values: ['150', '200', '207'] },
+  { kind: 'row', label: 'Rated AC Voltage (V)', values: ['220/380V; 230/400V; 240/415V (3L/N/PE)'], compact: true },
   { kind: 'row', label: 'Rated AC Frequency (Hz)', values: ['50/60'] },
   { kind: 'row', label: 'Max. AC Input Current (A)', values: ['227.8', '243.1', '273.4'] },
 
   { kind: 'section', label: 'Back-up Side (Off-Grid)' },
-  { kind: 'row', label: 'Rated Output Power (kW)', values: ['75.0', '100.0', '125.0'] },
+  { kind: 'row', label: 'Rated Output Power (kW)', values: ['75', '100', '125'] },
   { kind: 'row', label: 'Peak Output Apparent Power (kVA)', values: ['165 @10s'] },
-  { kind: 'row', label: 'Rated Output Voltage', values: ['220/380V; 230/400V; 240/415V (3L/N/PE)'], compact: true },
+  { kind: 'row', label: 'Rated Output Voltage (V)', values: ['220/380V; 230/400V; 240/415V (3L/N/PE)'], compact: true },
   { kind: 'row', label: 'Rated Output Frequency (Hz)', values: ['50/60'] },
   { kind: 'row', label: 'Rated Output Current (A)', values: ['113.9/108.3/104.3', '151.9/144.3/139.1', '189.9/180.4/173.9'], compact: true },
   { kind: 'row', label: 'On/Off-grid Switch Time (ms)', values: ['< 20'] },
@@ -165,49 +165,54 @@ export default function CatalogSpreadGlobal20260420_31B() {
 
         <div className="design-group-wrapper absolute left-[21.5mm] top-[211mm] w-[167.2mm] z-10">
           <div className="design-group-label">Product Features List</div>
-          <div className="grid grid-cols-2 gap-x-[10mm] gap-y-[8mm]">
+          <div className="grid grid-cols-2 gap-x-[10mm] gap-y-[5mm]">
             <div className="flex items-start gap-[4mm]">
               <div className="w-[9.46mm] h-[9.46mm] bg-[#ED1651] rounded-[2mm] shrink-0 mt-1"></div>
-              <div className="flex flex-col gap-[1mm]">
-                <h3 className="text-[#010202] font-medium text-[12pt]" style={{ fontFamily: '"MiSans", sans-serif' }}>Surge Protection</h3>
-                <p className="text-[#5A5A5C] font-normal text-[8pt] leading-[1.4]" style={{ fontFamily: '"MiSans", sans-serif' }}>
-                  Supports DC-Side Level 1 Surge Protection
-                </p>
-              </div>
+              <h3 className="text-[#010202] font-medium text-[9.6pt] leading-[1.3]" style={{ fontFamily: '"MiSans", sans-serif' }}>
+                Supports DC-Side Level 1 Surge Protection
+              </h3>
             </div>
 
             <div className="flex items-start gap-[4mm]">
               <div className="w-[9.46mm] h-[9.46mm] bg-[#ED1651] rounded-[2mm] shrink-0 mt-1"></div>
-              <div className="flex flex-col gap-[1mm]">
-                <h3 className="text-[#010202] font-medium text-[12pt]" style={{ fontFamily: '"MiSans", sans-serif' }}>Reliable Operation</h3>
-                <p className="text-[#5A5A5C] font-normal text-[8pt] leading-[1.4]" style={{ fontFamily: '"MiSans", sans-serif' }}>
-                  IP66 Ingress Protection, C5 Corrosion Optional
-                  <br />
-                  Built-in Grid Phase and CT Direction Adaptive Control
-                </p>
-              </div>
+              <h3 className="text-[#010202] font-medium text-[9.6pt] leading-[1.3]" style={{ fontFamily: '"MiSans", sans-serif' }}>
+                IP66 Ingress Protection, C5 Corrosion Optional
+              </h3>
             </div>
 
             <div className="flex items-start gap-[4mm]">
               <div className="w-[9.46mm] h-[9.46mm] bg-[#ED1651] rounded-[2mm] shrink-0 mt-1"></div>
-              <div className="flex flex-col gap-[1mm]">
-                <h3 className="text-[#010202] font-medium text-[12pt]" style={{ fontFamily: '"MiSans", sans-serif' }}>Parallel Ready</h3>
-                <p className="text-[#5A5A5C] font-normal text-[8pt] leading-[1.4]" style={{ fontFamily: '"MiSans", sans-serif' }}>
-                  Supports 10 Units in Parallel
-                </p>
-              </div>
+              <h3 className="text-[#010202] font-medium text-[9.6pt] leading-[1.3]" style={{ fontFamily: '"MiSans", sans-serif' }}>
+                Built-in Power Grid Phase Sequence Adaptive Control Function, Easy to Install and Debug
+              </h3>
             </div>
 
             <div className="flex items-start gap-[4mm]">
               <div className="w-[9.46mm] h-[9.46mm] bg-[#ED1651] rounded-[2mm] shrink-0 mt-1"></div>
-              <div className="flex flex-col gap-[1mm]">
-                <h3 className="text-[#010202] font-medium text-[12pt]" style={{ fontFamily: '"MiSans", sans-serif' }}>Easy Maintenance</h3>
-                <p className="text-[#5A5A5C] font-normal text-[8pt] leading-[1.4]" style={{ fontFamily: '"MiSans", sans-serif' }}>
-                  Supports Remote Monitoring and Upgrades
-                  <br />
-                  Auto-Reverse Fan Dust Removal, Easy to Maintain
-                </p>
-              </div>
+              <h3 className="text-[#010202] font-medium text-[9.6pt] leading-[1.3]" style={{ fontFamily: '"MiSans", sans-serif' }}>
+                Built-in CT Direction Adaptive Control Function, Easy to Install and Debug
+              </h3>
+            </div>
+
+            <div className="flex items-start gap-[4mm]">
+              <div className="w-[9.46mm] h-[9.46mm] bg-[#ED1651] rounded-[2mm] shrink-0 mt-1"></div>
+              <h3 className="text-[#010202] font-medium text-[9.6pt] leading-[1.3]" style={{ fontFamily: '"MiSans", sans-serif' }}>
+                Supports 10 Units in Parallel
+              </h3>
+            </div>
+
+            <div className="flex items-start gap-[4mm]">
+              <div className="w-[9.46mm] h-[9.46mm] bg-[#ED1651] rounded-[2mm] shrink-0 mt-1"></div>
+              <h3 className="text-[#010202] font-medium text-[9.6pt] leading-[1.3]" style={{ fontFamily: '"MiSans", sans-serif' }}>
+                Supports Remote Monitoring and Upgrades
+              </h3>
+            </div>
+
+            <div className="flex items-start gap-[4mm]">
+              <div className="w-[9.46mm] h-[9.46mm] bg-[#ED1651] rounded-[2mm] shrink-0 mt-1"></div>
+              <h3 className="text-[#010202] font-medium text-[9.6pt] leading-[1.3]" style={{ fontFamily: '"MiSans", sans-serif' }}>
+                Auto-Reverse Fan Dust Removal, Easy to Maintain
+              </h3>
             </div>
           </div>
         </div>
@@ -235,6 +240,10 @@ export default function CatalogSpreadGlobal20260420_31B() {
               {rows.map(renderTableRow)}
             </tbody>
           </table>
+          <div className="mt-[2mm] text-[5pt] leading-[1.25] text-[#9e9e9e]" style={{ fontFamily: '"Mark OT", sans-serif' }}>
+            <p>* Max. PV Input Voltage should be 950V; otherwise, the inverter will remain in a waiting state.</p>
+            <p>** Max. Input Apparent Power refers to the maximum power that can be imported from the grid to supply backup loads and charge the battery.</p>
+          </div>
         </div>
       </div>
     </div>

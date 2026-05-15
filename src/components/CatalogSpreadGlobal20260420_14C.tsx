@@ -179,14 +179,14 @@ export default function CatalogSpreadGlobal20260420_14C() {
                 <td colSpan={3} className="border-[0.368pt] border-white h-[4.551mm] px-[2mm] align-middle">AC Output</td>
               </tr>
               <tr className="bg-[#dbdcdb] text-[#231A16]">
-                <td className="border-[0.368pt] border-white h-[4.551mm] px-[2mm] align-middle text-left">Nominal AC Output Power (W)</td>
-                <td className="border-[0.368pt] border-white h-[4.551mm] px-[2mm] align-middle">100000</td>
-                <td className="border-[0.368pt] border-white h-[4.551mm] px-[2mm] align-middle">110000</td>
+                <td className="border-[0.368pt] border-white h-[4.551mm] px-[2mm] align-middle text-left">Nominal AC Output Power (kW)</td>
+                <td className="border-[0.368pt] border-white h-[4.551mm] px-[2mm] align-middle">100</td>
+                <td className="border-[0.368pt] border-white h-[4.551mm] px-[2mm] align-middle">110</td>
               </tr>
               <tr className="bg-[#dbdcdb] text-[#231A16]">
-                <td className="border-[0.368pt] border-white h-[4.551mm] px-[2mm] align-middle text-left">Max. Output Apparent Power (VA)</td>
-                <td className="border-[0.368pt] border-white h-[4.551mm] px-[2mm] align-middle">110000</td>
-                <td className="border-[0.368pt] border-white h-[4.551mm] px-[2mm] align-middle">121000</td>
+                <td className="border-[0.368pt] border-white h-[4.551mm] px-[2mm] align-middle text-left">Max. Output Apparent Power (kVA)</td>
+                <td className="border-[0.368pt] border-white h-[4.551mm] px-[2mm] align-middle">110</td>
+                <td className="border-[0.368pt] border-white h-[4.551mm] px-[2mm] align-middle">121</td>
               </tr>
               <tr className="bg-[#dbdcdb] text-[#231A16]">
                 <td className="border-[0.368pt] border-white h-[4.551mm] px-[2mm] align-middle text-left">Nominal Output Current (A)</td>
@@ -254,7 +254,7 @@ export default function CatalogSpreadGlobal20260420_14C() {
               </tr>
               <tr className="bg-[#dbdcdb] text-[#231A16]">
                 <td className="border-[0.368pt] border-white h-[4.551mm] px-[2mm] align-middle text-left">Operating Temperature Range (&deg;C)</td>
-                <td colSpan={2} className="border-[0.368pt] border-white h-[4.551mm] px-[2mm] align-middle">-30~+60 50°C@90kW (110KT)</td>
+                <td colSpan={2} className="border-[0.368pt] border-white h-[4.551mm] px-[2mm] align-middle">-30~+60, 50&deg;C@90kW (110KT)</td>
               </tr>
               <tr className="bg-[#dbdcdb] text-[#231A16]">
                 <td className="border-[0.368pt] border-white h-[4.551mm] px-[2mm] align-middle text-left">Relative Humidity</td>
@@ -340,7 +340,7 @@ export default function CatalogSpreadGlobal20260420_14C() {
               </tr>
               <tr className="bg-[#dbdcdb] text-[#231A16]">
                 <td className="border-[0.368pt] border-white h-[4.551mm] px-[2mm] align-middle text-left">AC Connection</td>
-                <td colSpan={2} className="border-[0.368pt] border-white h-[4.551mm] px-[2mm] align-middle">OT Terminal (Max. 240mm²</td>
+                <td colSpan={2} className="border-[0.368pt] border-white h-[4.551mm] px-[2mm] align-middle">OT Terminal (Max. 240mm²)</td>
               </tr>
               <tr className="bg-[#dbdcdb] text-[#231A16]">
                 <td className="border-[0.368pt] border-white h-[4.551mm] px-[2mm] align-middle text-left">Display</td>

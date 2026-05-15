@@ -188,7 +188,8 @@ export default function CatalogSpreadGlobal20260420_12() {
               </tr>
               <tr className="bg-[#dbdcdb] text-[#231A16]">
                 <td className="border-[0.368pt] border-white h-[4.551mm] px-[2mm] align-middle text-left">Number of Strings per MPPT</td>
-                <td colSpan={2} className="border-[0.368pt] border-white h-[4.551mm] px-[2mm] align-middle">1</td>
+                <td className="border-[0.368pt] border-white h-[4.551mm] px-[2mm] align-middle">1</td>
+                <td className="border-[0.368pt] border-white h-[4.551mm] px-[2mm] align-middle">2</td>
               </tr>
 
               {/* AC Input */}
@@ -299,7 +300,7 @@ export default function CatalogSpreadGlobal20260420_12() {
               </tr>
               <tr className="bg-[#dbdcdb] text-[#231A16]">
                 <td className="border-[0.368pt] border-white h-[4.551mm] px-[2mm] align-middle text-left">Dimensions (L*W*H, mm)</td>
-                <td className="border-[0.368pt] border-white h-[4.551mm] px-[2mm] align-middle">309*180*420</td>
+                <td className="border-[0.368pt] border-white h-[4.551mm] px-[2mm] align-middle">330*170*420</td>
                 <td className="border-[0.368pt] border-white h-[4.551mm] px-[2mm] align-middle">210*350*580</td>
               </tr>
               <tr className="bg-[#dbdcdb] text-[#231A16]">
@@ -309,7 +310,7 @@ export default function CatalogSpreadGlobal20260420_12() {
               </tr>
               <tr className="bg-[#dbdcdb] text-[#231A16]">
                 <td className="border-[0.368pt] border-white h-[4.551mm] px-[2mm] align-middle text-left">Operating Temperature Range (&deg;C)</td>
-                <td colSpan={2} className="border-[0.368pt] border-white h-[4.551mm] px-[2mm] align-middle">-40 ~ +60 (&gt;45&deg;C Power Derating)</td>
+                <td colSpan={2} className="border-[0.368pt] border-white h-[4.551mm] px-[2mm] align-middle">-25 ~ +60 (&gt;45&deg;C Power Derating)</td>
               </tr>
               <tr className="bg-[#dbdcdb] text-[#231A16]">
                 <td className="border-[0.368pt] border-white h-[4.551mm] px-[2mm] align-middle text-left">Max. Operating Altitude (m)</td>

@@ -1,6 +1,6 @@
 import React from 'react';
 import bgImage from '@/画册素材库/背景素材/画册-25B-产品页左上角背景.png';
-import productImage from '@/画册素材库/产品素材/IPX-51314SPT-25B.png';
+import productImage from '@/画册素材库/产品素材/IPX-51314SPT-25B-global-20260509.png';
 import { ProductImageEditor } from './ProductImageEditor';
 
 export default function CatalogSpreadGlobal20260420_25B() {
@@ -62,7 +62,7 @@ export default function CatalogSpreadGlobal20260420_25B() {
         {/* 特性列表 Grid */}
         <div className="design-group-wrapper absolute left-[21.5mm] top-[211mm] w-[167.2mm] z-10">
           <div className="design-group-label">产品特性列表</div>
-          <div className="grid grid-cols-2 gap-x-[10mm] gap-y-[4mm]">
+          <div className="grid grid-cols-2 gap-x-[10mm] gap-y-[6mm]">
             <div className="flex items-start gap-[4mm]">
               <div className="w-[9.46mm] h-[9.46mm] bg-[#ED1651] rounded-[2mm] shrink-0 mt-1"></div>
               <div className="flex flex-col gap-[1mm]">
@@ -82,62 +82,37 @@ export default function CatalogSpreadGlobal20260420_25B() {
                 <h3 className="text-[#010202] font-medium text-[12pt]" style={{ fontFamily: '"MiSans", sans-serif' }}>
                   Intelligent Software BMS
                 </h3>
-                <p className="text-[#5A5A5C] font-normal text-[8pt] leading-[1.3]" style={{ fontFamily: '"MiSans", sans-serif' }}>
-                  50+ Protection Algorithms for Safety<br />
-                  and Longer Lifespan
-                </p>
+                  <p className="text-[#5A5A5C] font-normal text-[8pt] leading-[1.3]" style={{ fontFamily: '"MiSans", sans-serif' }}>
+                    50+ Protection Algorithms for Safety and Longer Lifespan<br />
+                    3-Level Hardware Protection: Relay/Breaker/Fuse
+                  </p>
+                </div>
               </div>
-            </div>
 
-            <div className="flex items-start gap-[4mm]">
-              <div className="w-[9.46mm] h-[9.46mm] bg-[#ED1651] rounded-[2mm] shrink-0 mt-1"></div>
-              <div className="flex flex-col gap-[1mm]">
-                <h3 className="text-[#010202] font-medium text-[12pt]" style={{ fontFamily: '"MiSans", sans-serif' }}>
-                  3-Level Hardware Protection
-                </h3>
-                <p className="text-[#5A5A5C] font-normal text-[8pt] leading-[1.3]" style={{ fontFamily: '"MiSans", sans-serif' }}>
-                  Relay / Breaker / Fuse
-                </p>
+              <div className="flex items-start gap-[4mm]">
+                <div className="w-[9.46mm] h-[9.46mm] bg-[#ED1651] rounded-[2mm] shrink-0 mt-1"></div>
+                <div className="flex flex-col gap-[1mm]">
+                  <h3 className="text-[#010202] font-medium text-[12pt]" style={{ fontFamily: '"MiSans", sans-serif' }}>
+                    Flexible Expansion Capability
+                  </h3>
+                  <p className="text-[#5A5A5C] font-normal text-[8pt] leading-[1.3]" style={{ fontFamily: '"MiSans", sans-serif' }}>
+                    Support 16 in Parallel and 12 in Series<br />
+                    Automatically Configure the Parallel Address and Assign Master and Slave
+                  </p>
+                </div>
               </div>
-            </div>
 
-            <div className="flex items-start gap-[4mm]">
-              <div className="w-[9.46mm] h-[9.46mm] bg-[#ED1651] rounded-[2mm] shrink-0 mt-1"></div>
-              <div className="flex flex-col gap-[1mm]">
-                <h3 className="text-[#010202] font-medium text-[12pt]" style={{ fontFamily: '"MiSans", sans-serif' }}>
-                  Flexible Expansion Capability
-                </h3>
-                <p className="text-[#5A5A5C] font-normal text-[8pt] leading-[1.3]" style={{ fontFamily: '"MiSans", sans-serif' }}>
-                  Support 16 in Parallel and 12 in Series
-                </p>
+              <div className="flex items-start gap-[4mm]">
+                <div className="w-[9.46mm] h-[9.46mm] bg-[#ED1651] rounded-[2mm] shrink-0 mt-1"></div>
+                <div className="flex flex-col gap-[1mm]">
+                  <h3 className="text-[#010202] font-medium text-[12pt]" style={{ fontFamily: '"MiSans", sans-serif' }}>
+                    Application
+                  </h3>
+                  <p className="text-[#5A5A5C] font-normal text-[8pt] leading-[1.3]" style={{ fontFamily: '"MiSans", sans-serif' }}>
+                    Support C&amp;I and Residential Scenarios
+                  </p>
+                </div>
               </div>
-            </div>
-
-            <div className="flex items-start gap-[4mm]">
-              <div className="w-[9.46mm] h-[9.46mm] bg-[#ED1651] rounded-[2mm] shrink-0 mt-1"></div>
-              <div className="flex flex-col gap-[1mm]">
-                <h3 className="text-[#010202] font-medium text-[12pt]" style={{ fontFamily: '"MiSans", sans-serif' }}>
-                  Wide Application Compatibility
-                </h3>
-                <p className="text-[#5A5A5C] font-normal text-[8pt] leading-[1.3]" style={{ fontFamily: '"MiSans", sans-serif' }}>
-                  Support C&amp;I and Residential Scenarios<br />
-                  Support High Voltage and Low Voltage Systems
-                </p>
-              </div>
-            </div>
-
-            <div className="flex items-start gap-[4mm]">
-              <div className="w-[9.46mm] h-[9.46mm] bg-[#ED1651] rounded-[2mm] shrink-0 mt-1"></div>
-              <div className="flex flex-col gap-[1mm]">
-                <h3 className="text-[#010202] font-medium text-[12pt]" style={{ fontFamily: '"MiSans", sans-serif' }}>
-                  Automatic Parallel Address
-                </h3>
-                <p className="text-[#5A5A5C] font-normal text-[8pt] leading-[1.3]" style={{ fontFamily: '"MiSans", sans-serif' }}>
-                  Automatically Configure the Parallel Address<br />
-                  and Assign Master and Slave
-                </p>
-              </div>
-            </div>
           </div>
         </div>
       </div>

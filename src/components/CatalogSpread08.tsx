@@ -21,7 +21,7 @@ export default function CatalogSpread08() {
         {/* 产品图 (叠加在场景图右下角) */}
         <div className="design-group-wrapper absolute left-[128.7mm] top-[106.84mm] w-[68.83mm] h-[93.22mm] z-10">
           <div className="design-group-label">产品图</div>
-          <ProductImageEditor src={inverterImg} componentName="CatalogSpread08" initialX={13} /* IMAGE_TRANSFORM_X */ initialY={-44} /* IMAGE_TRANSFORM_Y */ initialScale={0.9} /* IMAGE_TRANSFORM_SCALE */ defaultHeight="100%" defaultMarginLeft="0" />
+          <ProductImageEditor src={inverterImg} componentName="CatalogSpread08" initialX={13} /* IMAGE_TRANSFORM_X */ initialY={-69} /* IMAGE_TRANSFORM_Y */ initialScale={1} /* IMAGE_TRANSFORM_SCALE */ defaultHeight="100%" defaultMarginLeft="0" />
         </div>
 
         {/* 功率徽标 */}

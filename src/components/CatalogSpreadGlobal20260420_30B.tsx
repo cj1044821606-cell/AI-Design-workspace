@@ -35,21 +35,21 @@ const rows: TableRow[] = [
   { kind: 'row', label: 'Max. Charge/Discharge Current (A)', values: ['40*2/40*2'] },
 
   { kind: 'section', label: 'Grid Side (On-Grid)' },
-  { kind: 'row', label: 'Rated Output Power (kW)', values: ['15.0', '20.0', '25.0', '30.0'] },
-  { kind: 'row', label: 'Max. Output Apparent Power (kVA)', values: ['15.0', '20.0', '25.0', '30.0'] },
+  { kind: 'row', label: 'Rated Output Power (kW)', values: ['15', '20', '25', '30'] },
+  { kind: 'row', label: 'Max. Output Apparent Power (kVA)', values: ['15', '20', '25', '30'] },
   { kind: 'row', label: 'Rated AC Voltage (V)', values: ['220/380V; 230/400V; 240/415V (3L/N/PE)'], compact: true },
   { kind: 'row', label: 'Rated AC Frequency (Hz)', values: ['50/60'] },
   { kind: 'row', label: 'Rated Output Current (A)', values: ['22.7/21.7/20.8', '30.2/28.8/27.6', '37.7/36.1/34.6', '45.6/43.3/41.7'], compact: true },
   { kind: 'row', label: 'Max. Output Current (A)', values: ['22.7', '30.2', '37.7', '45.6'] },
   { kind: 'row', label: 'Power Factor', values: ['0.8 Leading to 0.8 Lagging'] },
   { kind: 'row', label: 'THDi (@Rated Power)', values: ['<3%'] },
-  { kind: 'row', label: 'Max. Input Apparent Power (kVA)**', values: ['30.0', '40.0', '50.0', '50.0'] },
-  { kind: 'row', label: 'Rated AC Voltage', values: ['220/380V; 230/400V; 240/415V (3L/N/PE)'], compact: true },
+  { kind: 'row', label: 'Max. Input Apparent Power (kVA)**', values: ['30', '40', '50', '50'] },
+  { kind: 'row', label: 'Rated AC Voltage (V)', values: ['220/380V; 230/400V; 240/415V (3L/N/PE)'], compact: true },
   { kind: 'row', label: 'Rated AC Frequency (Hz)', values: ['50/60'] },
   { kind: 'row', label: 'Max. AC Input Current (A)', values: ['45.4', '60.4', '75.4', '75.4'] },
 
   { kind: 'section', label: 'Back-up Side (Off-Grid)' },
-  { kind: 'row', label: 'Rated Output Power (kW)', values: ['15.0', '20.0', '25.0', '30.0'] },
+  { kind: 'row', label: 'Rated Output Power (kW)', values: ['15', '20', '25', '30'] },
   { kind: 'row', label: 'Peak Output Apparent Power (kVA)', values: ['30 @10s', '40 @10s', '50 @10s', '50 @10s'] },
   { kind: 'row', label: 'Rated Output Voltage (V)', values: ['220/380V; 230/400V; 240/415V (3L/N/PE)'], compact: true },
   { kind: 'row', label: 'Rated Output Frequency (Hz)', values: ['50/60'] },
@@ -58,7 +58,7 @@ const rows: TableRow[] = [
   { kind: 'row', label: 'THDv (@Linear Load)', values: ['<3%'] },
 
   { kind: 'section', label: 'Generator Side' },
-  { kind: 'row', label: 'Max. Input Apparent Power (kVA)', values: ['15.0', '20.0', '25.0', '30.0'] },
+  { kind: 'row', label: 'Max. Input Apparent Power (kVA)', values: ['15', '20', '25', '30'] },
   { kind: 'row', label: 'Rated Input Voltage (V)', values: ['220/380V; 230/400V; 240/415V (3L/N/PE)'], compact: true },
   { kind: 'row', label: 'Rated Input Frequency (Hz)', values: ['50/60'] },
   { kind: 'row', label: 'Max. Input Current (A)', values: ['22.7', '30.2', '37.7', '45.6'] },
@@ -74,7 +74,7 @@ const rows: TableRow[] = [
   },
 
   { kind: 'section', label: 'General' },
-  { kind: 'row', label: 'Dimensions (W*H*D mm)', values: ['550*600*250'] },
+  { kind: 'row', label: 'Dimensions (W*H*D, mm)', values: ['550*600*250'] },
   { kind: 'row', label: 'Weight (kg)', values: ['35'] },
   { kind: 'row', label: 'Ingress Protection', values: ['IP66'] },
   { kind: 'row', label: 'Standby Self-consumption (W)', values: ['< 40'] },
@@ -172,51 +172,54 @@ export default function CatalogSpreadGlobal20260420_30B() {
 
         <div className="design-group-wrapper absolute left-[21.5mm] top-[211mm] w-[167.2mm] z-10">
           <div className="design-group-label">Product Features List</div>
-          <div className="grid grid-cols-2 gap-x-[10mm] gap-y-[8mm]">
+          <div className="grid grid-cols-2 gap-x-[10mm] gap-y-[6mm]">
             <div className="flex items-start gap-[4mm]">
               <div className="w-[9.46mm] h-[9.46mm] bg-[#ED1651] rounded-[2mm] shrink-0 mt-1"></div>
-              <div className="flex flex-col gap-[1mm]">
-                <h3 className="text-[#010202] font-medium text-[12pt]" style={{ fontFamily: '"MiSans", sans-serif' }}>High Power Density</h3>
-                <p className="text-[#5A5A5C] font-normal text-[8pt] leading-[1.4]" style={{ fontFamily: '"MiSans", sans-serif' }}>
-                  Compact Size with Strong Overload Capability
-                </p>
-              </div>
+              <h3 className="text-[#010202] font-medium text-[9.6pt] leading-[1.3]" style={{ fontFamily: '"MiSans", sans-serif' }}>
+                High Power Density, Compact Size, Strong Overload Capacity
+              </h3>
             </div>
 
             <div className="flex items-start gap-[4mm]">
               <div className="w-[9.46mm] h-[9.46mm] bg-[#ED1651] rounded-[2mm] shrink-0 mt-1"></div>
-              <div className="flex flex-col gap-[1mm]">
-                <h3 className="text-[#010202] font-medium text-[12pt]" style={{ fontFamily: '"MiSans", sans-serif' }}>Installation Adaptive</h3>
-                <p className="text-[#5A5A5C] font-normal text-[8pt] leading-[1.4]" style={{ fontFamily: '"MiSans", sans-serif' }}>
-                  Dedicated Diesel Generator Interface
-                  <br />
-                  Built-in Grid Phase and CT Direction Adaptive Control
-                </p>
-              </div>
+              <h3 className="text-[#010202] font-medium text-[9.6pt] leading-[1.3]" style={{ fontFamily: '"MiSans", sans-serif' }}>
+                A Dedicated Diesel Generator Interface Improves Efficiency
+              </h3>
             </div>
 
             <div className="flex items-start gap-[4mm]">
               <div className="w-[9.46mm] h-[9.46mm] bg-[#ED1651] rounded-[2mm] shrink-0 mt-1"></div>
-              <div className="flex flex-col gap-[1mm]">
-                <h3 className="text-[#010202] font-medium text-[12pt]" style={{ fontFamily: '"MiSans", sans-serif' }}>Retrofit Friendly</h3>
-                <p className="text-[#5A5A5C] font-normal text-[8pt] leading-[1.4]" style={{ fontFamily: '"MiSans", sans-serif' }}>
-                  Built-in AC Coupling Function
-                  <br />
-                  Compatible with PV Retrofitting and Upgrading
-                </p>
-              </div>
+              <h3 className="text-[#010202] font-medium text-[9.6pt] leading-[1.3]" style={{ fontFamily: '"MiSans", sans-serif' }}>
+                IP66 Ingress Protection, C5 Corrosion Optional
+              </h3>
             </div>
 
             <div className="flex items-start gap-[4mm]">
               <div className="w-[9.46mm] h-[9.46mm] bg-[#ED1651] rounded-[2mm] shrink-0 mt-1"></div>
-              <div className="flex flex-col gap-[1mm]">
-                <h3 className="text-[#010202] font-medium text-[12pt]" style={{ fontFamily: '"MiSans", sans-serif' }}>Remote O&amp;M</h3>
-                <p className="text-[#5A5A5C] font-normal text-[8pt] leading-[1.4]" style={{ fontFamily: '"MiSans", sans-serif' }}>
-                  IP66 Ingress Protection, C5 Corrosion Optional
-                  <br />
-                  Supports Remote Monitoring and Upgrades
-                </p>
-              </div>
+              <h3 className="text-[#010202] font-medium text-[9.6pt] leading-[1.3]" style={{ fontFamily: '"MiSans", sans-serif' }}>
+                Built-in Power Grid Phase Sequence Adaptive Control, Easy Installation and Debugging
+              </h3>
+            </div>
+
+            <div className="flex items-start gap-[4mm]">
+              <div className="w-[9.46mm] h-[9.46mm] bg-[#ED1651] rounded-[2mm] shrink-0 mt-1"></div>
+              <h3 className="text-[#010202] font-medium text-[9.6pt] leading-[1.3]" style={{ fontFamily: '"MiSans", sans-serif' }}>
+                Built-in CT Direction Adaptive Control, Easy Installation and Debugging
+              </h3>
+            </div>
+
+            <div className="flex items-start gap-[4mm]">
+              <div className="w-[9.46mm] h-[9.46mm] bg-[#ED1651] rounded-[2mm] shrink-0 mt-1"></div>
+              <h3 className="text-[#010202] font-medium text-[9.6pt] leading-[1.3]" style={{ fontFamily: '"MiSans", sans-serif' }}>
+                Built-in AC Coupling Function, Compatible with PV System Retrofitting and Upgrading
+              </h3>
+            </div>
+
+            <div className="flex items-start gap-[4mm]">
+              <div className="w-[9.46mm] h-[9.46mm] bg-[#ED1651] rounded-[2mm] shrink-0 mt-1"></div>
+              <h3 className="text-[#010202] font-medium text-[9.6pt] leading-[1.3]" style={{ fontFamily: '"MiSans", sans-serif' }}>
+                Supports Remote Monitoring and Upgrades
+              </h3>
             </div>
           </div>
         </div>
